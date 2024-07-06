@@ -6,7 +6,6 @@
 
     HelloWorld.vue Essential Links<br>
 
-    HelloWorld.vue Ecosystem<br>
 
   </div>
 </template>
