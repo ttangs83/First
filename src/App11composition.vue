@@ -20,14 +20,14 @@
 </template>
 
 <script>
-import {ref, onMounted, reactive} from 'vue'
+import {ref, reactive} from 'vue'
 export default {
   setup() { 
     const count= ref(2300);
     const info = ref('안내문');
 
     const increment = () => {
-      count.value = count.value+1; // this.count = this.count+1; this 키워드를 사용하면 에러 발생
+      count.value++; // this.count = this.count+1; this 키워드를 사용하면 에러 발생
       info.value = '   숫자가 증가합니다.';
     };
     
@@ -35,12 +35,7 @@ export default {
       count.value--;
       info.value = '   숫자가 감소합니다';
     };
-    
-    onMounted(()=>{
-      count.value = 1000;
-      info.value="홍길동";
-    });
-
+ 
     const state = reactive({
       guest : [
             { name:'kim', age:23, title:'apple'},
