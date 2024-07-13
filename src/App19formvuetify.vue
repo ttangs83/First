@@ -38,13 +38,13 @@
                   v-model="title"
                   dense
                   outlined
-                  label="제목" value=""
+                  label="제목" value="bbb"
                   style="width: 350px; margin-left: 100px"
                   :rules="[(v) => !!v || '제목은 필수입니다.']"
                 ></v-text-field>
                 <v-textarea
                   v-model="text"
-                  label="내용" value=""
+                  label="내용" value="ccc"
                   outlined
                   rows="5"
                   style="width: 400px; margin-left: 100px"

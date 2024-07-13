@@ -60,7 +60,7 @@ export default {
  }// 화면이 보여지기 전에 실행**/
  
  mounted(){ // 화면이 보여지고 나서 실행
-  this.displayGuest();
+  this.displayGuest(); // 자동으로 모든데이터 출력호출
  }
  
 }
